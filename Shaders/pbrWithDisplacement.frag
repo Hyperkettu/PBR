@@ -351,6 +351,8 @@ void main()
     
     FragColor = ogl_pbr(N, albedo, roughness, metallic, ao);
     //FragColor = disney_pbr(N, mon2lin(albedo), roughness, metallic, ao);
+    
+   // FragColor = vec4(N, 1.0);
 }
 
 vec4 disney_pbr(vec3 N, vec3 albedo, float roughness, float metallic, float ao) {

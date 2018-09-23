@@ -233,6 +233,10 @@ public:
         m_glContext->getCurrentRenderContext().m_Camera.moveBackwardZ(1.0f*Time::deltaTime);
     }
     
+    void ReloadShaders(){
+        m_Renderer.GetShaderManager().LoadShaders();
+    }
+    
     
     /**
      * Toggles full screen on and off

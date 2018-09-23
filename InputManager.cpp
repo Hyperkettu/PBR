@@ -66,6 +66,10 @@ namespace Fox {
                 app->toggleFullScreen();
             }
             
+            if(windowEvent.type == SDL_KEYUP && windowEvent.key.keysym.sym == SDLK_F1){
+                app->ReloadShaders();
+            }
+            
             if (windowEvent.type == SDL_MOUSEBUTTONDOWN) {
                 // If the left button was pressed
                 if (windowEvent.button.button == SDL_BUTTON_LEFT) {

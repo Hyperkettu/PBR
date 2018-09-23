@@ -81,6 +81,7 @@
 		0E208FEE1E48F74B005990C4 /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
 		0E2DDB3F1E6C293500826DA3 /* ShadowMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowMap.h; sourceTree = "<group>"; };
 		0E2DDB401E6C2A2B00826DA3 /* ShadowMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowMap.cpp; sourceTree = "<group>"; };
+		0E3418B71FF145E000E41F76 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		0E3A8C5B1F725C6A003B0642 /* CubeMapRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeMapRenderer.cpp; sourceTree = "<group>"; };
 		0E3A8C5C1F725C6A003B0642 /* CubeMapRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CubeMapRenderer.hpp; sourceTree = "<group>"; };
 		0E4D6CAD1E465BAF0096A908 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 				0EDECE291F7E8C2600DAA804 /* RenderTargetState.hpp */,
 				0EDECE2B1F7ECAE800DAA804 /* Framebuffer.cpp */,
 				0EDECE2C1F7ECAE800DAA804 /* Framebuffer.hpp */,
+				0E3418B71FF145E000E41F76 /* Util.h */,
 			);
 			path = "SDL-GLEW-App";
 			sourceTree = "<group>";

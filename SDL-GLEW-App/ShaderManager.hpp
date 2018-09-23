@@ -14,6 +14,7 @@
 
 #include "ShaderProgram.hpp"
 #include "ResourceManager.h"
+#include "Util.h"
 
 namespace Fox {
 
@@ -45,6 +46,8 @@ public:
     
     void AddShaderProgram(char* vertexShaderFile, char* fragmentShaderFile, Shader type) {
     
+        SAFE_RELEASE(m_Shaders[type]);
+        
         GLint vertexShaderFileSize;
         char* vertexShaderData = ResourceManager::loadFile(vertexShaderFile, vertexShaderFileSize);
         
