@@ -27,6 +27,10 @@
 		0E5CF3C61E34ADEB00CCC20C /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5CF3C51E34ADEB00CCC20C /* libGLEW.2.0.0.dylib */; };
 		0E62D6FD1E34CC750071FFD3 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E62D6FC1E34CC750071FFD3 /* Application.cpp */; };
 		0E62D6FF1E34CD580071FFD3 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E62D6FE1E34CD580071FFD3 /* InputManager.cpp */; };
+		0EB98F5F21BD38560044AE63 /* astar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB98F5E21BD38560044AE63 /* astar.cpp */; };
+		0EB98F6221BD385F0044AE63 /* BinaryHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB98F6121BD385F0044AE63 /* BinaryHeap.cpp */; };
+		0EB98F6521BD38690044AE63 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB98F6421BD38680044AE63 /* Graph.cpp */; };
+		0EB98F6821BD386D0044AE63 /* GridNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB98F6721BD386C0044AE63 /* GridNode.cpp */; };
 		0EC8708D1E3B84950039D70D /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8708C1E3B84950039D70D /* ResourceManager.cpp */; };
 		0ED82EF21F6FD97A00C3F932 /* BatchRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED82EF01F6FD97A00C3F932 /* BatchRenderer.cpp */; };
 		0ED82EF51F6FDB0F00C3F932 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED82EF31F6FDB0F00C3F932 /* GameObject.cpp */; };
@@ -100,6 +104,14 @@
 		0E5CF3CB1E34B8BF00CCC20C /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		0E62D6FC1E34CC750071FFD3 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		0E62D6FE1E34CD580071FFD3 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputManager.cpp; path = ../InputManager.cpp; sourceTree = "<group>"; };
+		0EB98F5E21BD38560044AE63 /* astar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astar.cpp; sourceTree = "<group>"; };
+		0EB98F6021BD385B0044AE63 /* astar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = astar.hpp; sourceTree = "<group>"; };
+		0EB98F6121BD385F0044AE63 /* BinaryHeap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryHeap.cpp; sourceTree = "<group>"; };
+		0EB98F6321BD38610044AE63 /* BinaryHeap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryHeap.hpp; sourceTree = "<group>"; };
+		0EB98F6421BD38680044AE63 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		0EB98F6621BD386B0044AE63 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
+		0EB98F6721BD386C0044AE63 /* GridNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GridNode.cpp; sourceTree = "<group>"; };
+		0EB98F6921BD386E0044AE63 /* GridNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GridNode.hpp; sourceTree = "<group>"; };
 		0EC8708B1E3B83EB0039D70D /* ResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
 		0EC8708C1E3B84950039D70D /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
 		0EC870911E3B8ADF0039D70D /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
@@ -169,6 +181,7 @@
 		0E5CF3BA1E34AD9700CCC20C /* SDL-GLEW-App */ = {
 			isa = PBXGroup;
 			children = (
+				0EB98F6A21BD39610044AE63 /* astar */,
 				0E5CF3BB1E34AD9700CCC20C /* main.cpp */,
 				0E5CF3C91E34AE4400CCC20C /* Application.h */,
 				0E5CF3CA1E34AF0600CCC20C /* GLContext.h */,
@@ -250,6 +263,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0EB98F6A21BD39610044AE63 /* astar */ = {
+			isa = PBXGroup;
+			children = (
+				0EB98F6621BD386B0044AE63 /* Graph.hpp */,
+				0EB98F6421BD38680044AE63 /* Graph.cpp */,
+				0EB98F5E21BD38560044AE63 /* astar.cpp */,
+				0EB98F6921BD386E0044AE63 /* GridNode.hpp */,
+				0EB98F6721BD386C0044AE63 /* GridNode.cpp */,
+				0EB98F6321BD38610044AE63 /* BinaryHeap.hpp */,
+				0EB98F6021BD385B0044AE63 /* astar.hpp */,
+				0EB98F6121BD385F0044AE63 /* BinaryHeap.cpp */,
+			);
+			path = astar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +340,7 @@
 				0EED2CB31E3E6A3F00652AD4 /* Ray.cpp in Sources */,
 				0E10DFFC1E4F6E14005921E6 /* Frustum.cpp in Sources */,
 				0E2DDB411E6C2A2B00826DA3 /* ShadowMap.cpp in Sources */,
+				0EB98F6521BD38690044AE63 /* Graph.cpp in Sources */,
 				0ED82EF21F6FD97A00C3F932 /* BatchRenderer.cpp in Sources */,
 				0EED2CB01E3E68AC00652AD4 /* Matrix.cpp in Sources */,
 				0E62D6FD1E34CC750071FFD3 /* Application.cpp in Sources */,
@@ -325,6 +354,8 @@
 				0E04CCAB1F6E891A000BB5CB /* ShaderManager.cpp in Sources */,
 				0E509D681F72AF35005CDD24 /* PostProcess.cpp in Sources */,
 				0E5CF3BC1E34AD9700CCC20C /* main.cpp in Sources */,
+				0EB98F6221BD385F0044AE63 /* BinaryHeap.cpp in Sources */,
+				0EB98F5F21BD38560044AE63 /* astar.cpp in Sources */,
 				0E62D6FF1E34CD580071FFD3 /* InputManager.cpp in Sources */,
 				0E04CCAE1F6E8DB3000BB5CB /* Renderer.cpp in Sources */,
 				0EDECE2D1F7ECAE800DAA804 /* Framebuffer.cpp in Sources */,
@@ -335,6 +366,7 @@
 				0ED82EFB1F702FB100C3F932 /* SceneGraph.cpp in Sources */,
 				0E208FF01E48F74B005990C4 /* TextureManager.cpp in Sources */,
 				0ED82EF51F6FDB0F00C3F932 /* GameObject.cpp in Sources */,
+				0EB98F6821BD386D0044AE63 /* GridNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
